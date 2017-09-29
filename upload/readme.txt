@@ -1,47 +1,44 @@
-Opencart NihaoPay¸¶¿î½Ó¿Ú:Credit Card payment,UnionPay Online payment,AliPay online payment,WechatPay online payment
+# nihaopay-opencart3
+opencart 3.0.2.0
+ å¦‚æœ‰å…¶ä»–é—®é¢˜è¯·é—®liang.qin@aurfy.com è·å–å¸®åŠ©
+ 
+ å®‰è£…è¯´æ˜ï¼š
+(ä¸€)
+1.ç›´æ¥ä¸Šä¼ nihaopay.payment.ocmod.zipï¼›
+2.åœ¨ç³»ç»Ÿç®¡ç†åå°(Extensions->Installer->Upload)
+3.åœ¨ç³»ç»Ÿç®¡ç†åå°(Extensions->Extensions->Choose the extension type(Payments))
+æ·»åŠ  Payment Method
+ä¾æ¬¡å¡«å†™Token,Callback URL,IPN URL,Transaction Server,Geo Zone,Total,Order Status,Status,Sort Order
+Token              â€”- NihaoPayç³»ç»Ÿç”Ÿæˆäº¤æ˜“Token
+Transaction Server â€”- Live(ç”Ÿäº§ç¯å¢ƒ),Test(æµ‹è¯•ç¯å¢ƒ)
+Geo Zone	       â€”- é»˜è®¤ All zones
+Total		       â€”- The checkout total the order must reach before this payment method becomes active(å¯ä¸å¡«ï¼Œé»˜è®¤ä¸ºç©º)
+Order Status       â€”- è®¢å•æ”¯ä»˜å®Œæˆåæ˜¾ç¤ºçš„è®¢å•çŠ¶æ€
+Status             â€”- æ˜¯å¦å¯ç”¨
+Sort Order         â€”- å¯ä¸å¡«ï¼Œé»˜è®¤ä¸ºç©º
+ 
+(äºŒ)
+1.è§£å‹nihaopay.payment.ocmod.zip
+2.è§£å‹åuploadæ–‡ä»¶å¤¹ä¸‹çš„ä¸¤ä¸ªæ–‡ä»¶FTPæ–¹å¼ä¸Šä¼ åˆ°ç½‘ç«™æ ¹ç›®å½•(æ³¨:é€‰æ‹©æ‰€æœ‰ä¸æ›¿æ¢ä¸Šä¼ )
+
+
+
+æ³¨æ„ï¼š
+1.æ£€æŸ¥åå°é‚®ä»¶æœåŠ¡æ˜¯å¦é…ç½®(åœ¨å‘é€é‚®ä»¶æ—¶ä¼šå‡ºé”™æˆ–æ— é™ç­‰å¾…ä¸­)
+ 
+2.è¯·å‹¿éšæ„ä¿®æ”¹ç¨‹åºï¼Œå°†å¯èƒ½å‡ºç°æ‰å•æƒ…å†µ
+ 
+3.æ¥å£å®‰è£…åï¼Œå¦‚é¢å¤–æ·»åŠ å…¶å®ƒç»„ä»¶æˆ–è€…æ¨¡å—ï¼Œè¯·é‡æ–°æ£€æµ‹äº¤æ˜“æ•°æ®æ˜¯å¦æ­£å¸¸
+
+4.æ›´æ”¹ç³»ç»Ÿé»˜è®¤å¸ç§åï¼Œè¯·åˆ·æ–°æ±‡ç‡
+
+è¯´æ˜
 ================
- 
-
- ÖØÒªËµÃ÷:²å¼şÔÚOpencart 3.0.2.0ÏÂ²âÊÔÍ¨¹ı 
- ÈçÓĞÆäËûÎÊÌâÇëÎÊliang.qin@aurfy.com »ñÈ¡°ïÖú
- 
- °²×°ËµÃ÷£º
-(Ò»)
-1.Ö±½ÓÉÏ´«nihaopay.payment.ocmod.zip£»
-2.ÔÚÏµÍ³¹ÜÀíºóÌ¨(Extensions->Installer->Upload)
-3.ÔÚÏµÍ³¹ÜÀíºóÌ¨(Extensions->Extensions->Choose the extension type(Payments))
-Ìí¼Ó Payment Method
-ÒÀ´ÎÌîĞ´Token,Callback URL,IPN URL,Transaction Server,Geo Zone,Total,Order Status,Status,Sort Order
-Token              ¡ª- NihaoPayÏµÍ³Éú³É½»Ò×Token
-Callback URL       ¡ª- Ö§¸¶Íê³Éºó·µ»ØÉÌ»§ÍøÕ¾
-IPN URL            ¡ª- Ö§¸¶Íê³ÉºóºóÌ¨Í¨ÖªÉÌ»§ÍøÕ¾
-Transaction Server ¡ª- Live(Éú²ú»·¾³),Test(²âÊÔ»·¾³)
-Geo Zone	   ¡ª- Ä¬ÈÏ All zones
-Total		   ¡ª- The checkout total the order must reach before this payment method becomes active(¿É²»Ìî£¬Ä¬ÈÏÎª¿Õ)
-Order Status       ¡ª- ¶©µ¥Ö§¸¶Íê³ÉºóÏÔÊ¾µÄ¶©µ¥×´Ì¬
-Status             ¡ª- ÊÇ·ñÆôÓÃ
-Sort Order         ¡ª- ¿É²»Ìî£¬Ä¬ÈÏÎª¿Õ
- 
-(¶ş)
-1.½âÑ¹nihaopay.payment.ocmod.zip
-2.½âÑ¹ºóuploadÎÄ¼ş¼ĞÏÂµÄÁ½¸öÎÄ¼şFTP·½Ê½ÉÏ´«µ½ÍøÕ¾¸ùÄ¿Â¼(×¢:Ñ¡ÔñËùÓĞ²»Ìæ»»ÉÏ´«)
+NihaoPayæ’ä»¶ï¼Œæ”¯æŒ:Credit Card payment,UnionPay Online payment,AliPay online payment,WechatPay online payment
 
 
 
-×¢Òâ£º
-1.¼ì²éºóÌ¨ÓÊ¼ş·şÎñÊÇ·ñÅäÖÃ(ÔÚ·¢ËÍÓÊ¼şÊ±»á³ö´í»òÎŞÏŞµÈ´ıÖĞ)
- 
-2.ÇëÎğËæÒâĞŞ¸Ä³ÌĞò£¬½«¿ÉÄÜ³öÏÖµôµ¥Çé¿ö
- 
-3.½Ó¿Ú°²×°ºó£¬Èç¶îÍâÌí¼ÓÆäËü×é¼ş»òÕßÄ£¿é£¬ÇëÖØĞÂ¼ì²â½»Ò×Êı¾İÊÇ·ñÕı³£
-
-ËµÃ÷
-================
-NihaoPay²å¼ş£¬Ö§³Ö:Credit Card payment,UnionPay Online payment,AliPay online payment,WechatPay online payment
-
-
-
-±¸×¢
+å¤‡æ³¨
 ==================
 
-ÈÎºÎÎÊÌâÇëÁªÏµ  liang.qin@aurfy.com 
+ä»»ä½•é—®é¢˜è¯·è”ç³»  liang.qin@aurfy.com 

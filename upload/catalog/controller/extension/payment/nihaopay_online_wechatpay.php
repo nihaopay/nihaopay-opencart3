@@ -23,17 +23,17 @@ class ControllerExtensionPaymentNihaoPayOnlineWechatPay extends Controller {
 		
 		$data['client_ip'] = $this->request->server['REMOTE_ADDR'];
 		$data['description'] = html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8');
-		$amount=$this->currency->format($order_info['total'], $order_info['currency_code'], $order_info['currency_value'], false);
-		if($this->session->data['currency']=='JPY'){
+		$amount=$this->currency->format($order_info['total'], $order_info['currency_code'], 1.00000 , false);
+		if($this->config->get('config_currency')=='JPY'){
 		    $data['amount']=$amount;
 		} else {
 		    $data['amount'] = 100 * $amount;
 		}
-		$data['currency'] = $this->session->data['currency'];
+		$data['currency'] = $this->config->get('config_currency');
 		$data['vendor'] = 'wechatpay';
 		$data['reference'] = $this->session->data['order_id'];
-		$data['callback_url'] = $this->config->get('payment_nihaopay_online_wechatpay_callback_url');
-		$data['ipn_url'] = $this->config->get('payment_nihaopay_online_wechatpay_ipn_url');
+		$data['callback_url'] = $this->url->link('extension/payment/nihaopay_online_wechatpay/callback','',true);
+		$data['ipn_url'] = $this->url->link('extension/payment/nihaopay_online_wechatpay/ipn','',true);
 		
 		
 		$curl = curl_init($url);

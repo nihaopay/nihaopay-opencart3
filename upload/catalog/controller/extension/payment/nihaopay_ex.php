@@ -42,13 +42,13 @@ class ControllerExtensionPaymentNihaoPayEx extends Controller {
 		
 		$data['client_ip'] = $this->request->server['REMOTE_ADDR'];
 		$data['description'] = html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8');
-		$amount=$this->currency->format($order_info['total'], $order_info['currency_code'], $order_info['currency_value'], false);
-		if($this->session->data['currency']=='JPY'){
+		$amount=$this->currency->format($order_info['total'], $order_info['currency_code'], 1.00000 , false);
+		if($this->config->get('config_currency')=='JPY'){
 		    $data['amount']=$amount;
 		} else {
 		    $data['amount'] = 100 * $amount;
 		}
-		$data['currency'] = $this->session->data['currency'];
+		$data['currency'] = $this->config->get('config_currency');
 		$data['card_number'] = str_replace(' ', '', $this->request->post['cc_number']);
 		$data['card_exp_month'] = $this->request->post['cc_expire_date_month'];
 		$data['card_exp_year'] = $this->request->post['cc_expire_date_year'];

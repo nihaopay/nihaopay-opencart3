@@ -31,18 +31,6 @@ class ControllerExtensionPaymentNihaoPayOnlineUnionPay extends Controller {
 			$data['error_token'] = '';
 		}
 		
-		if (isset($this->error['callback_url'])) {
-		    $data['error_callback_url'] = $this->error['callback_url'];
-		} else {
-		    $data['error_callback_url'] = '';
-		}
-		
-		if (isset($this->error['ipn_url'])) {
-		    $data['error_ipn_url'] = $this->error['ipn_url'];
-		} else {
-		    $data['error_ipn_url'] = '';
-		}
-
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
@@ -62,18 +50,6 @@ class ControllerExtensionPaymentNihaoPayOnlineUnionPay extends Controller {
 
 		$data['action'] = $this->url->link('extension/payment/nihaopay_online_unionpay', 'user_token=' . $this->session->data['user_token'], true);
 		$data['cancel'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=payment', true);
-
-		if (isset($this->request->post['payment_nihaopay_online_unionpay_callback_url'])) {
-			$data['payment_nihaopay_online_unionpay_callback_url'] = $this->request->post['payment_nihaopay_online_unionpay_callback_url'];
-		} else {
-			$data['payment_nihaopay_online_unionpay_callback_url'] = $this->config->get('payment_nihaopay_online_unionpay_callback_url');
-		}
-		
-		if (isset($this->request->post['payment_nihaopay_online_unionpay_ipn_url'])) {
-		    $data['payment_nihaopay_online_unionpay_ipn_url'] = $this->request->post['payment_nihaopay_online_unionpay_ipn_url'];
-		} else {
-		    $data['payment_nihaopay_online_unionpay_ipn_url'] = $this->config->get('payment_nihaopay_online_unionpay_ipn_url');
-		}
 
 		if (isset($this->request->post['payment_nihaopay_online_unionpay_token'])) {
 			$data['payment_nihaopay_online_unionpay_token'] = $this->request->post['payment_nihaopay_online_unionpay_token'];
@@ -136,14 +112,6 @@ class ControllerExtensionPaymentNihaoPayOnlineUnionPay extends Controller {
 	protected function validate() {
 		if (!$this->user->hasPermission('modify', 'extension/payment/nihaopay_online_unionpay')) {
 			$this->error['warning'] = $this->language->get('error_permission');
-		}
-
-		if (!$this->request->post['payment_nihaopay_online_unionpay_callback_url']) {
-			$this->error['callback_url'] = $this->language->get('error_callback_url');
-		}
-		
-		if (!$this->request->post['payment_nihaopay_online_unionpay_ipn_url']) {
-		    $this->error['ipn_url'] = $this->language->get('error_ipn_url');
 		}
 
 		if (!$this->request->post['payment_nihaopay_online_unionpay_token']) {

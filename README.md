@@ -10,11 +10,9 @@ opencart 3.0.2.0
 添加 Payment Method
 依次填写Token,Callback URL,IPN URL,Transaction Server,Geo Zone,Total,Order Status,Status,Sort Order
 Token              —- NihaoPay系统生成交易Token
-Callback URL       —- 支付完成后返回商户网站
-IPN URL            —- 支付完成后后台通知商户网站
 Transaction Server —- Live(生产环境),Test(测试环境)
-Geo Zone	   —- 默认 All zones
-Total		   —- The checkout total the order must reach before this payment method becomes active(可不填，默认为空)
+Geo Zone	       —- 默认 All zones
+Total		       —- The checkout total the order must reach before this payment method becomes active(可不填，默认为空)
 Order Status       —- 订单支付完成后显示的订单状态
 Status             —- 是否启用
 Sort Order         —- 可不填，默认为空
@@ -31,6 +29,8 @@ Sort Order         —- 可不填，默认为空
 2.请勿随意修改程序，将可能出现掉单情况
  
 3.接口安装后，如额外添加其它组件或者模块，请重新检测交易数据是否正常
+
+4.更改系统默认币种后，请刷新汇率
 
 说明
 ================

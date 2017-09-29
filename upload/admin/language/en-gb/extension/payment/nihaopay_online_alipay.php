@@ -8,18 +8,12 @@ $_['text_success']          = 'Success: You have modified NihaoPay (AliPay) acco
 $_['text_edit']             = 'Edit NihaoPay (AliPay)';
 $_['text_test']             = 'Test';
 $_['text_live']             = 'Live';
-$_['text_authorization']    = 'Authorization';
-$_['text_capture']          = 'Capture';
 $_['text_nihaopay_online_alipay']= '<a onclick="window.open(\'https://nihaopay.com\');"><img src="view/image/payment/nihaopay.jpeg" alt="NihaoPay" title="NihaoPay" style="border: 1px solid #EEEEEE;max-width:100px; max-height:46px;" /></a>';
 
 // Entry
-$_['entry_callback_url']    = 'Callback URL';
-$_['entry_ipn_url']         = 'IPN URL';
 $_['entry_payment_type']    = 'Payment Type';
 $_['entry_token']           = 'Token';
-$_['entry_hash']            = 'MD5 Hash';
 $_['entry_server']          = 'Transaction Server';
-$_['entry_mode']            = 'Transaction Mode';
 $_['entry_method']          = 'Transaction Method';
 $_['entry_total']           = 'Total';
 $_['entry_order_status']    = 'Order Status';
@@ -32,7 +26,5 @@ $_['help_total']            = 'The checkout total the order must reach before th
 
 // Error
 $_['error_permission']      = 'Warning: You do not have permission to modify payment NihaoPay (AliPay)!';
-$_['error_callback_url']    = 'Callback URL is Required!';
-$_['error_ipn_url']         = 'IPN URL is Required!';
 $_['error_payment_type']	= 'At least one payment type is required!';
 $_['error_token']           = 'Token is Required!';
