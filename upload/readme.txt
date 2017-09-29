@@ -8,7 +8,7 @@ opencart 3.0.2.0
 2.在系统管理后台(Extensions->Installer->Upload)
 3.在系统管理后台(Extensions->Extensions->Choose the extension type(Payments))
 添加 Payment Method
-依次填写Token,Callback URL,IPN URL,Transaction Server,Geo Zone,Total,Order Status,Status,Sort Order
+依次填写Token,Transaction Server,Geo Zone,Total,Order Status,Status,Sort Order
 Token              —- NihaoPay系统生成交易Token
 Transaction Server —- Live(生产环境),Test(测试环境)
 Geo Zone	       —- 默认 All zones
