@@ -51,6 +51,11 @@ Pay attention to：
 
 4.After changes the system default currency，Please refresh rate
 
+(三)
+
+Website to install document：http://docs.opencart.com/extension/modifications/
+
+
 Instructions
 ================
 
