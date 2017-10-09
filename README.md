@@ -36,7 +36,9 @@ Sort Order         —- Don't fill in, the default is empty
  
 (二)
 
+
 Copy the content of upload folder into your OpenCart root folder.
+
 This module don't replace any OpenCart's core files.
 
 
