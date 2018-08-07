@@ -7,9 +7,8 @@ class ControllerExtensionPaymentNihaoPayOnlineUnionPay extends Controller {
 	}
 
 	public function send() {
-	    if ($this->config->get('payment_nihaopay_online_unionpay_server') == 'live') {
-	        $curl = 'https://api.nihaopay.com/v1.2/transactions/securepay';
-	    } elseif ($this->config->get('payment_nihaopay_online_unionpay_server') == 'test') {
+	    $url = 'https://api.nihaopay.com/v1.2/transactions/securepay';
+	    if ($this->config->get('payment_nihaopay_online_unionpay_server') == 'test') {
 	        $url = 'https://apitest.nihaopay.com/v1.2/transactions/securepay';
 	    }
 
