@@ -2,7 +2,7 @@
 
 opencart 3.0.2.0
 
- If you have any other questions，You may contact:liang.qin@aurfy.com 
+ If you have any other questions，You may contact:support@nihaopay.com
  
  Installation instructions：
  
